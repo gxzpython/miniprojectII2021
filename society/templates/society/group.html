@@ -1,0 +1,12 @@
+{% if group %}
+	<ul>
+		{% for group in group %}
+    <li><a href="{{group.id}}/">{{group.name}}<a></li>
+
+		{% endfor%}
+	</ul>
+{% else %}
+	<p> No Group are available.</p>
+{% endif %}
+
+<a href="../"> <button>Goback</button></a>

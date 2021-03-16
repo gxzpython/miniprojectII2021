@@ -1,0 +1,16 @@
+<h2>Welcome to Django Society Signup!</h2>
+
+<form method="post" enctype="multipart/form-data">
+	{% csrf_token %}
+
+	{{ form.as_p }}
+
+	<button type="submit">Upload</button>
+</form>
+
+{% if img_obj %}
+
+	<h3>Successfully uploaded :{{img_obj.username}}</h3>
+    <img src="{{img_obj.image.url}}" alt="connect" style ="max-height: 300px">
+    <a href="../"> <button>Goback</button></a>
+{% endif %}

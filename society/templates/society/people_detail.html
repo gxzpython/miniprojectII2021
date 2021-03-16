@@ -1,0 +1,19 @@
+{% if people_detailview %}
+	
+	<h3>
+		About Creator:
+			{{people_detailview.about_me}}
+	</h3>
+	<h3>
+		Username:
+			{{people_detailview.username}}	
+	</h3>
+	<h3> 
+		Favorite Movie:
+			{{people_detailview.fav_movies}}	</h3>
+
+
+{% else %}
+	<p> No people are available.</p>
+{% endif %}
+<a href="../"> <button>Goback</button></a>

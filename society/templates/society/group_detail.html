@@ -1,0 +1,11 @@
+{% if group_detailview %}
+	<h3>Group Name:</h3>
+	<h4>==>{{group_detailview.name}}</h4>
+	<h4>Group Description:</h4>
+	<h4>==>{{group_detailview.description}}</h4>
+	<h4>Creator: {{group_detailview.creator.first_name}} {{group_detailview.creator.first_name}}</h4>
+{% else %}
+	<p> No people are available.</p>
+{% endif %}
+
+<a href="../"> <button>Goback</button></a>

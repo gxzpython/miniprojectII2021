@@ -1,0 +1,26 @@
+<!-- {% if event %}
+	<ul>
+		{% for event in event %}
+			<li>{{event.description}}</li>
+		{% endfor%}
+	</ul>
+
+{% else %}
+	<p> No Event are available.</p>
+{% endif %} -->
+
+
+
+{% if event %}
+	<h1>There are total {{number}} event in the society</h1><br>
+	<ol>
+	
+	{% for event in event %}
+		<li><a href="{{event.id}}/">{{event.event_title}}<a></li>
+		{% endfor%}
+	</ol>
+
+{% else %}
+	<p> No people are available.</p>
+{% endif %}
+<a href="../"> <button>Goback</button></a>
